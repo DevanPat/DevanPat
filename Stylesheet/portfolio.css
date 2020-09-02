@@ -36,7 +36,7 @@ body {
     .Navbar a {
         float: left; /* specifies that text floats on the left on navbar */
         display: block; /* makes sure that different texts will be displayed on the same line or row, rather then a new line */
-        color: blue; /*  the font color for text on navbar */
+        color: green; /*  the font color for text on navbar */
         padding: .75vw 1vw; /* adds padding around the text */
         text-decoration: none; /*  gets rid underlines under navbar */
         font-family: Avant Garde, Helvetica; /*  specifies font family for text on our navbar */
@@ -85,7 +85,7 @@ body {
 /* Navbar hover effect */
 .Navbar a:hover {
     background-color: #F4F4F4; /*  This defines the background color that will display when you hover over the text on the navbar */
-    color: royalblue; /* This defines the font color that will display when you hover over the text on the navbar */
+    color: black; /* This defines the font color that will display when you hover over the text on the navbar */
     font-weight: bold; /* This makes the text on the navbar bold when hovered over */
     cursor: pointer;
     -webkit-transition-duration: 1s;
@@ -123,7 +123,7 @@ body {
 /* Text over the video */
 .Video_Text {
     background: rgba(0, 0, 0, 0.5); /*  provides a semi-transparent background for text to sit over */
-    color: white;
+    color: green;
     width: 100%;
     padding-top: .1vh; /* adds padding around text so that the background goes just a little beyond the text */
     padding-bottom: 1vh;
@@ -211,9 +211,10 @@ body {
 
 /* Slideshow text */
 .text {
-    color: royalblue;
+    color: green;
     padding: 1vw;
-    position: absolute;
+    position: relative;
+    margin-top: 20px;
     bottom: 0;
     width: 100%;
     text-align: center;
@@ -273,7 +274,7 @@ body {
     float: left;
     width: 50%; /* makes sure one column takes up half the page width */
     padding: 1.6%;
-    background-color: black;
+    background-color: green;
     height: 448px; /* You might need to adjust this to fit your content */
 }
 
@@ -282,7 +283,7 @@ body {
     width: 50%;
     padding: 1.6%;
     height: 448px; /* You may need to adjust this to fit your content */
-    background-color: blue;
+    background-color: black;
 }
 
 .Row:after { /* will insert something after the content of the selected elements */
@@ -307,7 +308,7 @@ p {
     font-size: 1.5vw;
     padding-left: 1vw;
     padding-right: 1vw;
-    color: white;
+    color: black;
 }
 
 /* Center align elements - keeps all centered text */
@@ -322,12 +323,12 @@ center {
 
 /* Anchor elements */
 a {
-    color: white; /* making sure all links are blue */
+    color: black; /* making sure all links are blue */
 }
 
 /*Anchor elements hover styling*/
 a:hover {
-    color: blue;
+    color: white;
 }
 
 /* Quotation elements */
@@ -354,14 +355,14 @@ center:hover {
 
 /* Paragraph element hover effect */
 p:hover {
-    color: blue;
+    color: white;
     transition: transform 1s;
     transform: scale(1.01);
 }
 
 /* Heading 1 element hover effect */
 h1:hover {
-    color: black;
+    color: white;
     font-weight: normal; /* Makes text no longer bold when hovered over */
 }
 
@@ -398,7 +399,7 @@ img:hover {
     -webkit-animation: movePopup 5s;
     animation: movePopup 5s;
     background-color: black;
-    color: blue;
+    color: green;
 }
 
 /* The popup form - hidden by default */
@@ -469,7 +470,7 @@ button {
 
 .form-container .cancel:hover {
     color: white;
-    background-color: blue;
+    background-color: green;
     -webkit-transition-duration: 1s;
     transition-duration: 1s;
     border-style: solid;
@@ -483,5 +484,9 @@ footer {
 }
 
 .footer-section {
-color: white;
+color: green;
+}
+
+.footer-section:hover {
+    color: white;
 }

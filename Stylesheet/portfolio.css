@@ -470,7 +470,7 @@ button {
 
 .form-container .cancel:hover {
     color: white;
-    background-color: green;
+    background-color: blue;
     -webkit-transition-duration: 1s;
     transition-duration: 1s;
     border-style: solid;

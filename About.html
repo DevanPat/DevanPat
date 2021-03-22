@@ -6,6 +6,7 @@
     <link rel="stylesheet" type=text/css href="./Stylesheet/portfolio.css">
     <script src="./JS/portfolio.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 </head>
 <body>
     
@@ -24,52 +25,40 @@
         Your browser does not support HTML5 video. <!-- Displays the message if the video fails to run -->
       </video>
     </div>
+
+    <br>
+    <br>
     <div id="Slideshow">
       <div id="Slideshow_Background">
         <div id="Slideshow_Container">
-
-
-    <div class="mySlides fade">
-      <div class="Slide_Number">1 / 4</div>
-      <img class="Slide_Show_Images" src="./Stylesheet/img/htmlcssjs.png" style="height:500px; width: 100%" alt="htmlcss image">
-      <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="Slide_Number">2 / 4</div>
-      <img class="Slide_Show_Images" src="./Stylesheet/img/c-sharp.png" style="height:500px; width:100%" alt="c-sharp image">
-      <div class="text">C#, .NET Framework, ASP.NET, MVC,</div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="Slide_Number">3 / 4</div>
-      <img class="Slide_Show_Images" src="./Stylesheet/img/SQL_Database.jpg" style="height:500px; width: 100%" alt="sql image">
-      <div class="text">back end development, databases and SQL.</div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="Slide_Number">4 / 4</div>
-      <img class="Slide_Show_Images" src="./Stylesheet/img/Coding_1.jpg" style="height:500px; width: 100%" alt="coding image">
-      <div class="text">
-        <a onclick="openForm()" href="#Contact" style="color:green;">Contact me!</a>
+          <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+        <div class="carousel-item active"  data-bs-interval="5000">
+          <img src="./Stylesheet/img/htmlcssjs.png" class="d-block w-100"  style="height:208.16px; width:416.33px" alt="...">
+          <div class="text">I am a full-stack software developer trained in:<br>HTML, CSS, JavaScript,</div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="./Stylesheet/img/c-sharp.png" class="d-block w-100"  style="height:208.16px; width:416.33px" alt="...">
+          <div class="text">C#, .NET Framework, ASP.NET, MVC,</div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="./Stylesheet/img/SQL_Database.jpg" class="d-block w-100"  style="height:208.16px; width:416.33px" alt="...">
+          <div class="text">back end development, databases and SQL.</div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <img src="./Stylesheet/img/Coding_1.jpg" class="d-block w-100" style="height:208.16px; width:416.33px" alt="...">
+          <div class="text">
+            <a onclick="openForm()" href="#Contact" style="color:green;">Contact me!</a>
+          </div>
       </div>
     </div>
-    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
-
-  </div>
-
-  <div style="text-align:center">
-
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-    <span class="dot" onclick="currentSlide(4)"></span>
 
   </div>
 </div>
 </div>
 
+<br>
+<br>
 
     <!-- About section -->
     <div class="Row" id="About">
@@ -123,31 +112,8 @@
           <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
       
         </form>
-        <script>
-            var slideIndex = 1;
-            showSlides(slideIndex);
-            function plusSlides(n) {
-              showSlides(slideIndex += n);
-            }
-            function currentSlide(n) {
-              showSlides(slideIndex = n);
-            }
-            function showSlides(n) {
-              var i;
-              var slides = document.getElementsByClassName("mySlides");
-              var dots = document.getElementsByClassName("dot");
-              if (n > slides.length) { slideIndex = 1 }
-              if (n < 1) { slideIndex = slides.length }
-              for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-              }
-              for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-              }
-              slides[slideIndex - 1].style.display = "block";
-              dots[slideIndex - 1].className += " active";
-            }
-        </script>
+        
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     </body>
       
   </html>

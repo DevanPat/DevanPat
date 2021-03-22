@@ -427,10 +427,6 @@ button {
 footer {
     padding: 2%;
     background-color: black;
-    position: absolute;
-    bottom: 0;
-    height:2.5rem;
-    width: 100%;
 }
 
 .footer-section {
@@ -441,11 +437,3 @@ color: green;
     color: white;
 }
 
-#page-container {
-    position: relative;
-    min-height: 100vh;
-}
-
-#content-wrap {
-    padding-bottom: 2.5rem;
-}

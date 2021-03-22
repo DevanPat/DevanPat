@@ -429,7 +429,8 @@ footer {
     background-color: black;
     position: absolute;
     bottom: 0;
-    width: 100%;s
+    height:2.5rem;
+    width: 100%;
 }
 
 .footer-section {
@@ -443,4 +444,8 @@ color: green;
 #page-container {
     position: relative;
     min-height: 100vh;
+}
+
+#content-wrap {
+    padding-bottom: 2.5rem;
 }

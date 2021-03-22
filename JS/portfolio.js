@@ -33,3 +33,10 @@ function closeForm() {
     document.getElementById("myForm").style.display = "none";
     this.Close();
 }
+
+
+document.body.className += ' fade-out';
+$(function () {
+  $('body').removeClass('fade-out');
+}
+);

@@ -30,6 +30,7 @@ body {
     position: fixed;
     -webkit-animation: moveNav 5s; /* Safari 4.0 - 8.0 */
     animation: moveNav 5s;
+    margin-bottom: 0px;
 }
 
     /* Navbar text */
@@ -127,16 +128,14 @@ body {
     width: 100%;
     padding-top: .1vh; /* adds padding around text so that the background goes just a little beyond the text */
     padding-bottom: 1vh;
-    margin-top: 23%;
+    margin-top: 0px;
     position: relative;
     -webkit-animation: moveNav 4s; /* Safari 4.0 - 8.0 */
     animation: movevideoText 4s;
 }
 
 /* Slideshow Styling */
-#Slideshow_Background {
-    background: rgba(255,255,255, 0.35); /* creates a slightly transparent white background that is placed over the video */
-}
+
 
 
 .mySlides {
@@ -331,11 +330,6 @@ a:hover {
     color: white;
 }
 
-/* Quotation elements */
-q {
-    font-style: italic;
-    font-weight: bold;
-}
 
 /* Image elements */
 img {

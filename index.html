@@ -6,6 +6,7 @@
   <meta charset="UTF-8">
   <title>Devan Raj</title>
   <link rel="stylesheet" type=text/css href="./Stylesheet/portfolio.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   <script src="./JS/portfolio.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
@@ -78,37 +79,12 @@
     </div>
 
     <!--  included JS function within the file to make sure it was given precedence, the function covers the slideshow -->
-    <script>
-            var slideIndex = 1;
-            showSlides(slideIndex);
-            function plusSlides(n) {
-              showSlides(slideIndex += n);
-            }
-            function currentSlide(n) {
-              showSlides(slideIndex = n);
-            }
-            function showSlides(n) {
-              var i;
-              var slides = document.getElementsByClassName("mySlides");
-              var dots = document.getElementsByClassName("dot");
-              if (n > slides.length) { slideIndex = 1 }
-              if (n < 1) { slideIndex = slides.length }
-              for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-              }
-              for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-              }
-              slides[slideIndex - 1].style.display = "block";
-              dots[slideIndex - 1].className += " active";
-            }
-    </script>
-
+   
   <!-- Footer section -->
   <footer>
             <center><div class="footer-section">Made by: Devan Raj</div></center><br>      
   </footer>
 
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>
 </html>

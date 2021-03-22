@@ -427,7 +427,8 @@ button {
 footer {
     padding: 2%;
     background-color: black;
-    position: fixed;
+    position: absolute;
+    bottom: 0;
 }
 
 .footer-section {

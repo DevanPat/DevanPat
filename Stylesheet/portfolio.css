@@ -1,4 +1,4 @@
-﻿* Affects entire document */
+﻿﻿* Affects entire document */
 html {
     scroll-behavior: smooth; /* Makes sure that the page scrolling is smooth when the nav bar is clicked */
 }
@@ -159,11 +159,6 @@ body {
     }
 }
 
-.responsive {
-    width: 100%;
-    height: auto;
-}
-
 /* Slideshow section / container */
 #Slideshow_Container {
     width: 39.5vw;
@@ -171,7 +166,6 @@ body {
     padding-top: 4%;
     position: relative;
     margin: auto;
-    display: flex;
 }
 
 /* Images contained within slideshow */
@@ -181,7 +175,6 @@ body {
     box-shadow: 0px 5px 10px 12px rgba(0, 0, 0, .75);
     width: auto;
 }
-
 
 
 
@@ -436,4 +429,3 @@ color: green;
 .footer-section:hover {
     color: white;
 }
-

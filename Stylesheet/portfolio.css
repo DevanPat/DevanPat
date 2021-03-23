@@ -1,4 +1,4 @@
-﻿﻿* Affects entire document */
+﻿* Affects entire document */
 html {
     scroll-behavior: smooth; /* Makes sure that the page scrolling is smooth when the nav bar is clicked */
 }
@@ -30,7 +30,6 @@ body {
     position: fixed;
     -webkit-animation: moveNav 5s; /* Safari 4.0 - 8.0 */
     animation: moveNav 5s;
-    margin-bottom: 0px;
 }
 
     /* Navbar text */
@@ -128,16 +127,21 @@ body {
     width: 100%;
     padding-top: .1vh; /* adds padding around text so that the background goes just a little beyond the text */
     padding-bottom: 1vh;
-    margin-top: 0px;
+    margin-top: 23%;
     position: relative;
     -webkit-animation: moveNav 4s; /* Safari 4.0 - 8.0 */
     animation: movevideoText 4s;
 }
 
 /* Slideshow Styling */
+#Slideshow_Background {
+    background: rgba(255,255,255, 0.35); /* creates a slightly transparent white background that is placed over the video */
+}
 
 
-
+.mySlides {
+    display: none;
+}
 
 @-webkit-keyframes fade {
     from {
@@ -177,6 +181,33 @@ body {
 }
 
 
+/* Next and previous buttons */
+.Previous, .Next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 2vw;
+    margin-top: -0vw;
+    color: darkgray;
+    font-weight: bold;
+    font-size: 1.5vw;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    transition: 0.6s ease;
+}
+
+/* Positioning the right-hand next button */
+.Next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+    /* Hover effect on slide show buttons */
+    .Previous:hover, .Next:hover {
+        background-color: rgba(0,0,0,0.8);
+        color: white;
+    }
 
 /* Slideshow text */
 .text {
@@ -194,12 +225,37 @@ body {
     font-weight: bold;
     border-radius: 7px 7px 7px 7px;
 }
-/* 
-/* Numb
+
+/* Number text (1/6, 2/6, etc.) - set the display to none, which means these are hidden */
+.Slide_Number {
+    color: white;
+    position: absolute;
+    top: 0;
+    font-family: Perpetua, Rockwell Extra Bold;
+    letter-spacing: .1vw;
+    font-size: 1.5vw;
+    font-weight: bold;
+    display: none;
+}
+
+/* The dots under the slideshow */
+.dot {
+    cursor: pointer;
+    height: 1vw;
+    width: 1vw;
+    margin: .25vw;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    position: relative;
+    z-index: 1;
+}
+
     /* Hover effect for slideshow dots */
-    /* .active, .dot:hover {
-        background-color: black; */
-    } 
+    .active, .dot:hover {
+        background-color: black;
+    }
 
 /* Fading animation for slideshow */
 .fade {
@@ -275,6 +331,11 @@ a:hover {
     color: white;
 }
 
+/* Quotation elements */
+q {
+    font-style: italic;
+    font-weight: bold;
+}
 
 /* Image elements */
 img {

@@ -1,4 +1,4 @@
-﻿* Affects entire document */
+* Affects entire document */
 html {
     scroll-behavior: smooth; /* Makes sure that the page scrolling is smooth when the nav bar is clicked */
 }
@@ -12,6 +12,7 @@ body {
     font-family: Avant Garde, Helvetica;
     font-size: 1.5vw;
     height: 100%;
+    background-image: url(./img/backgroundimg.png);
 }
 
     /* contributes to the fade effect for the page that occurs when the page is loaded */
@@ -31,6 +32,8 @@ body {
     position: fixed;
     -webkit-animation: moveNav 5s; /* Safari 4.0 - 8.0 */
     animation: moveNav 5s;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
     /* Navbar text */
@@ -123,6 +126,18 @@ body {
     animation: movevideoText 4s;
 }
 
+.banner {
+    background: rgba(0, 0, 0, 0.5); /*  provides a semi-transparent background for text to sit over */
+    color: green;
+    width: 100%;
+    padding-top: .1vh; /* adds padding around text so that the background goes just a little beyond the text */
+    padding-bottom: 1vh;
+    position: relative;
+    -webkit-animation: moveNav 4s; /* Safari 4.0 - 8.0 */
+    animation: movevideoText 4s;
+    margin-top: 5px;
+}
+
 /* Slideshow Styling */
 #Slideshow_Background {
     background: rgba(255, 255, 255, 0.145); /* creates a slightly transparent white background that is placed over the video */
@@ -137,16 +152,18 @@ body {
     position: relative;
     margin-top: 20px;
     bottom: 0;
-    width: 100%;
-    text-align: center;
     font-family: Perpetua, Rockwell Extra Bold;
     letter-spacing: .1vw;
     font-size: 1.5vw;
-    background-color: rgba(0,0,0,0.75);
     font-weight: bold;
+   
+}
+
+.text-background {
+    margin: auto;
+    background-color: rgba(0,0,0,0.75);
+    width: 48%;
     border-radius: 7px 7px 7px 7px;
-    display: flex;
-    align-items: center;
 }
 
 
@@ -202,7 +219,8 @@ p {
     font-size: 1.5vw;
     padding-left: 1vw;
     padding-right: 1vw;
-    color: black;
+    color: green;
+    text-align: center;
 }
 
 /* Center align elements - keeps all centered text */
@@ -235,11 +253,17 @@ q {
 img {
     filter: grayscale(75%); /* This rids pictures of 75% of their color */
     border-radius: 8px; /*  causes images to have slightly rounded edges */
-    max-width: 100%;
-    height: 100%;
+    max-width: 50%;
+    height: 50%;
     margin: auto auto auto auto;
     display: block; /*  specifying block display makes sure our images are able to be centered */
 }
+
+.profilepicture {
+    margin-top: 10px;
+}
+
+
 
 /* Center align element hover effect */
 center:hover {
@@ -384,7 +408,7 @@ button {
   }
 
 footer {
-    color: green;
-    background-color: black;
-    justify-content: center;
-}
+      color: green;
+      background-color: black;
+      justify-content: center;
+  }

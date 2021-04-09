@@ -19,36 +19,30 @@ body {
         opacity: .1; /*  sets the level of opacity at the start of page load */
         transition: none;
     }
-
-/* Navbar */
-.Navbar {
-    overflow: hidden; /* makes sure that any content that overflows beyond the boundary of nav bar isn't displayed */
-    background-color: black; /* colors the navbar black */
-    position: fixed; /* keeps navbar at the top of the screen as we scroll */
-    top: 0; /* makes sure no space is displayed above the navbar */
+    .Navbar {
+        background-color: #000000;
+        overflow: hidden;
+        top: 0; /* makes sure no space is displayed above the navbar */
     width: 100%; /* makes sure the navbar span the entire width of the page */
     z-index: 1; /*makes sure other elements don't display over the navbar */
     position: fixed;
     -webkit-animation: moveNav 5s; /* Safari 4.0 - 8.0 */
     animation: moveNav 5s;
-}
-
-    /* Navbar text */
-    .Navbar a {
-        float: left; /* specifies that text floats on the left on navbar */
-        display: block; /* makes sure that different texts will be displayed on the same line or row, rather then a new line */
-        color: green; /*  the font color for text on navbar */
-        padding: .75vw 1vw; /* adds padding around the text */
-        text-decoration: none; /*  gets rid underlines under navbar */
-        font-family: Avant Garde, Helvetica; /*  specifies font family for text on our navbar */
-        font-size: 1.5vw; /*  specifies font size for text on our navbar */
-        text-align: center; /*centers text within its container */
-        position: relative;
-        -webkit-animation: movenavText 5.75s; /* Safari 4.0 - 8.0 */
-        animation: movenavText 5.75s;
-        letter-spacing: .2vw;
     }
 
+    .Navbar a {
+        float: left;
+        color: green;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    
+    .Navbar a:hover {
+        background-color: #f5f5f5;
+        color: #000000;
+    }
 /* animation effect for moving nav bar*/
 @keyframes moveNav {
     from {
@@ -83,21 +77,6 @@ body {
     }
 }
 
-/* Navbar hover effect */
-.Navbar a:hover {
-    background-color: #F4F4F4; /*  This defines the background color that will display when you hover over the text on the navbar */
-    color: black; /* This defines the font color that will display when you hover over the text on the navbar */
-    font-weight: bold; /* This makes the text on the navbar bold when hovered over */
-    cursor: pointer;
-    -webkit-transition-duration: 1s;
-    transition-duration: 1s;
-}
-
-/* Navbar home button */
-.Navbar a.active a:hover { /* The active selector styles a link */
-    background-color: royalblue; /* This specifies the background color behind the Home button on the navbar */
-    color: white;
-}
 
 
 /* Video */
@@ -122,13 +101,6 @@ body {
     -webkit-animation: moveNav 4s; /* Safari 4.0 - 8.0 */
     animation: movevideoText 4s;
 }
-
-/* Slideshow Styling */
-#Slideshow_Background {
-    background: rgba(255, 255, 255, 0.145); /* creates a slightly transparent white background that is placed over the video */
-}
-
-
 
 /* Slideshow text */
 .text {
@@ -229,6 +201,10 @@ a:hover {
 q {
     font-style: italic;
     font-weight: bold;
+}
+
+#Slideshow_Background {
+    margin-top: 25px;
 }
 
 /* Image elements */
@@ -387,4 +363,6 @@ footer {
     color: green;
     background-color: black;
     justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }

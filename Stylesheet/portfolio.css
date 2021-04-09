@@ -140,7 +140,7 @@ body {
     float: left;
     width: 50%; /* makes sure one column takes up half the page width */
     padding: 1.6%;
-    background-color: green;
+    background-color: darkgreen;
     height: 448px; /* You might need to adjust this to fit your content */
 }
 
@@ -175,6 +175,7 @@ p {
     padding-left: 1vw;
     padding-right: 1vw;
     color: black;
+    text-align: center;
 }
 
 /* Center align elements - keeps all centered text */
@@ -330,7 +331,7 @@ button {
 
 .form-container .cancel:hover {
     color: white;
-    background-color: green;
+    background-color: rgba(146, 146, 146, 0.597);
     -webkit-transition-duration: 1s;
     transition-duration: 1s;
     border-style: solid;
@@ -363,6 +364,6 @@ footer {
     color: green;
     background-color: black;
     justify-content: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }

@@ -31,9 +31,6 @@
     <a href="./contact.html">Contact</a> <!-- makes it so that openForm function runs when we click Contact on nav bar -->
   </div>
 
-  <!--  allows form to close when we click outside the nav bar or contact form -->
-  <div class="btn cancel" onclick="closeForm()">
-
     <!-- Home -->
     <div id="Home">
       <br> <!-- Breaks to add space between navbar and heading -->
@@ -77,8 +74,8 @@
       <div class="Column_1">
         <!-- Right column -->
        
-          <center><h1>About</h1>
-          <p>I am a full stack software developer. <br><br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more. Please take a look at my <a href="https://docs.google.com/document/d/192r3P4r0PnTC3VBSgtzGQ6-9UiKG9FP_y-S3tK1_Q98/edit?usp=sharing" target="_blank">Resume</a> and <a href="https://www.linkedin.com/in/devan-pat-raj/" target="_blank">LinkedIn</a> for more information! <br><br>I would love to work with you on your project. <a href="#Contact">Contact</a> me below!</p></center>
+          <center><h1>About Me</h1>
+          <center><p>I am a full stack software developer.<br> When I am not coding or working on projects some of my hobbies are hanging out with friends & family, going to meetups, playing guitar, and exercising.<br>I am trained and experienced in the following computer programming languages: HTML, CSS, JavaScript, SQL & C#. Please take a look at my <a href="https://docs.google.com/document/d/192r3P4r0PnTC3VBSgtzGQ6-9UiKG9FP_y-S3tK1_Q98/edit?usp=sharing" target="_blank">Resume</a> and <a href="https://www.linkedin.com/in/devan-pat-raj/" target="_blank">LinkedIn</a> for more information! <br><br> <a href="./contact.html">Contact Me</a></p></center>
       </div>
     </div>
 
@@ -107,50 +104,28 @@
     </div>
   </div>
 
-  <!-- Contact section -->
-  <div id="Contact">
-    <button onclick="openForm()" class="Pop_Up_Button"> CONTACT </button>
-    <div class="form-popup" id="myForm">
-      <form action="/action_page.php" method="POST" class="form-container">
-        <h1>Contact</h1>
-        <label for="name"><b>Name</b></label>
-        <input type="text" placeholder="Type your name here" name="name" required>
-        <label for="phone"><b>Phone</b></label>
-        <input type="text" placeholder="Enter your phone number here" name="phone">
-        <label for="email"><b>Email</b></label>
-        <input type="text" placeholder="Type your email address here" name="email" required>
-        <label for="message"><b>Message</b></label>
-        <input type="text" placeholder="Type your message here" name="message">
 
-        <button type="submit" class="btn">SUBMIT</button>
-        <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
 
-      </form>
-    </div>
-  </div>
+<footer>
+  <center><div class="footer-section">Created by: Devan Raj</div></center>    
+</footer>
 
-  <!-- Footer section -->
-  <footer>
-    <br>
-            <center><div class="footer-section">Made by: Devan Raj</div></center><br>      
-  </footer>
 
-  <script>
-    var slideIndex = 0;
-    carousel();
+<script>
+  var slideIndex = 0;
+  carousel();
 
-    function carousel() {
-      var i;
-      var x = document.getElementsByClassName("Slide_Show_Images");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-    }
-     slideIndex++
-     if (slideIndex > x.length) {slideIndex = 1}
-     x[slideIndex-1].style.display = "block";
-     setTimeout(carousel, 3500); // Changes images every 3.5 seconds
-    }
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("Slide_Show_Images");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+  }
+   slideIndex++
+   if (slideIndex > x.length) {slideIndex = 1}
+   x[slideIndex-1].style.display = "block";
+   setTimeout(carousel, 3500); // Changes images every 3.5 seconds
+  }
 </script>
-
 </body>
 </html>

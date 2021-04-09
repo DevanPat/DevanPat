@@ -253,6 +253,7 @@ img:hover {
     max-width: 49vw;
     padding: 9px;
     background-color: whitesmoke;
+    border-radius: 7px 7px 7px 7px;
 }
 
     /* Input fields */

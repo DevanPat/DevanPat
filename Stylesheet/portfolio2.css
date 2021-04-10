@@ -166,6 +166,8 @@ body {
     padding: 1.6%;
     background-color: green;
     height: 448px; /* You might need to adjust this to fit your content */
+    max-width: 100%;
+    height: auto;
 }
 
 .Column_2 {
@@ -174,6 +176,8 @@ body {
     padding: 1.6%;
     height: 448px; /* You may need to adjust this to fit your content */
     background-color: black;
+    max-width: 100%;
+    height: auto;
 }
 
 .Row:after { /* will insert something after the content of the selected elements */
@@ -232,14 +236,16 @@ q {
 img {
     filter: grayscale(75%); /* This rids pictures of 75% of their color */
     border-radius: 8px; /*  causes images to have slightly rounded edges */
-    max-width: 50%;
-    height: 50%;
+    max-width: 100%;
+    height: auto;
     margin: auto auto auto auto;
     display: block; /*  specifying block display makes sure our images are able to be centered */
 }
 
 .profilepicture {
     margin-top: 20px;
+    max-width: 100%;
+    height: auto;
 }
 
 
